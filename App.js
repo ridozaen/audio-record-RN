@@ -4,7 +4,6 @@ import { Buffer } from 'buffer';
 import Permissions from 'react-native-permissions';
 import Sound from 'react-native-sound';
 import AudioRecord from 'react-native-audio-record';
-import PitchFinder from 'pitchfind';
 
 export default class App extends Component {
   sound = null;
@@ -31,7 +30,7 @@ export default class App extends Component {
       const chunk = Buffer.from(data, 'base64');
       // do something with audio chunk
       console.log('buffer?', chunk)
-      
+
     });
   }
 
